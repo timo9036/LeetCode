@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "9b3f64d847ebde4d",
+    "type": "split",
+    "children": [
+      {
+        "id": "affcfbd9828527a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35140ea3ae3e120f",
+            "type": "leaf",
+            "state": {
+              "type": "code-editor",
+              "state": {
+                "file": "solutions/ContainsDuplicate.kt"
+              },
+              "icon": "lucide-file",
+              "title": "ContainsDuplicate.kt"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f0a2dc1214509960",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7528739f55c6007",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ce7e6406a7ce781",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4d60faf71a836c4d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "16d7cc019f34a8aa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "33e3c672e2085636",
+    "type": "split",
+    "children": [
+      {
+        "id": "d53ed90ced14d9e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cda896828e810ce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "LeetCode Dashboard.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for LeetCode Dashboard"
+            }
+          },
+          {
+            "id": "cae722a134581cfb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "LeetCode Dashboard.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from LeetCode Dashboard"
+            }
+          },
+          {
+            "id": "dee2c00ca18b48bd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "96f0001533eb1b2e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d16ad38968254ce7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "LeetCode Dashboard.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of LeetCode Dashboard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "code-files:Create Code File": false
+    }
+  },
+  "active": "35140ea3ae3e120f",
+  "lastOpenFiles": [
+    "agent_pipeline.py",
+    "generate_notes.py",
+    "README.md",
+    "LeetCode Dashboard.md",
+    "notes/ContainsDuplicate.md",
+    "solutions/ContainsDuplicate.kt",
+    "New Text Document.txt"
+  ]
+}
