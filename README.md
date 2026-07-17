@@ -1,6 +1,6 @@
 # 🚀 LeetCode & NeetCode FAANG Preparation Engine
 
-An automated, data-driven framework designed to master Data Structures & Algorithms (DSA), build deep syntax fluency in Kotlin and Python, and systematically prepare for technical interviews.
+An automated, data-driven framework designed to master Data Structures & Algorithms (DSA), build deep syntax fluency in Kotlin and Python, and systematically prepare for technical interviews.[cite: 15]
 
 ---
 
@@ -14,9 +14,42 @@ An automated, data-driven framework designed to master Data Structures & Algorit
 <!-- END_STATS_VAL -->
 
 ### 🎯 Objective Strategy
-- **Primary Language:** Kotlin (Optimizing for day-job autonomy & structured type safety in system design)
-- **Curriculum Track:** NeetCode 150 Mastery Tree
-- **Knowledge Base:** Synced locally with an Obsidian Markdown Vault using YAML frontmatter for deep query mapping.
+- **Primary Language:** Kotlin (Optimizing for day-job autonomy & structured type safety in system design)[cite: 15]
+- **Curriculum Track:** NeetCode 150 Mastery Tree[cite: 15]
+- **Knowledge Base:** Synced locally with an Obsidian Markdown Vault using YAML frontmatter for deep query mapping.[cite: 15]
+
+---
+
+## 🔄 Core Operational Toolchain Flows
+
+You have two paths to choose from depending on whether you are using a dedicated API key or a premium subscription IDE workspace agent.
+
+### Path A: The Direct API Framework (DeepSeek Engine)
+Use this option to directly generate deep technical study documentation straight from your terminal terminal workspace.
+
+```text
+[Write Code File] ──> [Run generate_notes.py] ──> [API Generates Note] ──> [Auto Updates README Badges]
+```
+
+```bash
+# Command execution blueprint
+python generate_notes.py ValidAnagram.kt
+```
+
+### Path B: The Subscription Agent Framework (Cursor / Claude Code)
+Use this option if you prefer using a native chat subscription context window without configuring environment api credentials.
+
+```text
+[Write Code File] ──> [Run agent_pipeline.py] ──> [Agent Processes Manifest] ──> [Note & Badges Updated]
+```
+
+```bash
+# 1. Evaluate repository structure and create task manifest
+python agent_pipeline.py
+
+# 2. Open chat window and drop directive
+# Command: "@agent_todo.manifest execute task file instructions"
+```
 
 ---
 
@@ -25,23 +58,12 @@ An automated, data-driven framework designed to master Data Structures & Algorit
 ```text
 CODE/
 │
-├── solutions/       # Compilable production source files (Kotlin/Python)
-│   └── ContainsDuplicate.kt
+├── solutions/        # Compilable production source files (Kotlin/Python)[cite: 15]
+│   └── ContainsDuplicate.kt[cite: 15]
 │
-├── notes/           # Automated Markdown study sheets synced to Obsidian Vault
-│   └── ContainsDuplicate.md
+├── notes/            # Automated Markdown study sheets synced to Obsidian Vault[cite: 15]
+│   └── ContainsDuplicate.md[cite: 15]
 │
-└── generate_notes.py # Local LLM compiler engine pipeline
+├── generate_notes.py # Local DeepSeek API engine pipeline script
+└── agent_pipeline.py # Subscription workspace agent manifest generator
 ```
-
----
-
-## ⚡ Automated Toolchain Usage
-
-When a problem is solved locally within the `./solutions/` directory, the study matrix documentation sheet is auto-compiled via the internal generation engine:
-
-```bash
-# Execute the pipeline utility
-python generate_notes.py YourProblemName.kt
-```
-The engine automatically evaluates the source implementation, determines time/space complexities, extracts core optimization insights, maps tricky edge cases, and deploys a fully tagged file straight to the documentation directory.
