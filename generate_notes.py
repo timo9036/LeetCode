@@ -100,3 +100,54 @@ if __name__ == "__main__":
         
     target_file = sys.argv[1]
     process_solution_file(target_file)
+
+
+    import re
+
+def update_readme_stats():
+    notes_dir = Path(OBSIDIAN_VAULT_DIR)
+    if not notes_dir.exists():
+        return
+
+    # Scan all markdown notes to compute counts
+    total = 0
+    easy = 0
+    medium = 0
+    hard = 0
+
+    for note_file in notes_dir.glob("*.md"):
+        total += 1
+        with open(note_file, "r", encoding="utf-8") as f:
+            content = f.read()
+            # Simple metadata checks based on frontmatter tags
+            if "difficulty/easy" in content.lower() or "difficulty: easy" in content.lower():
+                easy += 1
+            elif "difficulty/medium" in content.lower() or "difficulty: medium" in content.lower():
+                medium += 1
+            elif "difficulty/hard" in content.lower() or "difficulty: hard" in content.lower():
+                hard += 1
+
+    readme_path = Path("./README.md")
+    if not readme_path.exists():
+        return
+
+    with open(readme_path, "r", encoding="utf-8") as f:
+        readme_content = f.read()
+
+    # Build the updated dynamic badge block strings
+    new_badges = (
+        f"![](https://img.shields.io/badge/Total%20Problems%20Solved-{total}-blueviolet?style=for-the-badge&logo=leetcode)\n"
+        f"![](https://img.shields.io/badge/Easy-{easy}-green?style=for-the-badge)\n"
+        f"![](https://img.shields.io/badge/Medium-{medium}-orange?style=for-the-badge)\n"
+        f"![](https://img.shields.io/badge/Hard-{hard}-red?style=for-the-badge)"
+    )
+
+    # Regex find and replace target comments blocks inside the README
+    pattern = r"<!-- START_STATS_VAL -->.*?<!-- END_STATS_VAL -->"
+    replacement = f"<!-- START_STATS_VAL -->\n{new_badges}\n<!-- END_STATS_VAL -->"
+    
+    updated_readme = re.sub(pattern, replacement, readme_content, flags=re.DOTALL)
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(updated_readme)
+    print("📈 README metrics successfully compiled and synchronized!")
