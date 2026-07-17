@@ -55,11 +55,12 @@ You are an elite software engineering agent. Your task is to process the followi
 ## 📂 Target Source Files to Process:
 """
     for file in missing_notes:
-        manifest_content += f"- File Path: {file}\n  Source Code:\n```kotlin\n{file.read_text(encoding='utf-8')}\n```\n\n"
+        # Dynamically define the code fence syntax matching the file extension
+        lang_syntax = "kotlin" if file.suffix == ".kt" else "python"
+        manifest_content += f"- File Path: {file}\n  Source Code:\n```{lang_syntax}\n{file.read_text(encoding='utf-8')}\n```\n\n"
 
     MANIFEST_PATH.write_text(manifest_content, encoding="utf-8")
     print(f"🚀 Created agent_todo.manifest! Feed this file to your subscription agent.")
 
 if __name__ == "__main__":
     build_agent_manifest()
-```

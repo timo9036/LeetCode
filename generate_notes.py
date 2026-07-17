@@ -10,7 +10,7 @@ import requests
 SOLUTIONS_DIR = "./solutions" 
 OBSIDIAN_VAULT_DIR = "./notes"  
 README_PATH = "./README.md"
-DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
+DEEPSEEK_API_URL = "[https://api.deepseek.com/v1/chat/completions](https://api.deepseek.com/v1/chat/completions)"
 
 # Ensure directories exist
 Path(SOLUTIONS_DIR).mkdir(exist_ok=True)
@@ -44,8 +44,8 @@ def update_readme_stats():
         content = readme.read_text(encoding="utf-8")
         badges = (f"![](https://img.shields.io/badge/Total%20Problems%20Solved-{total}-blueviolet?style=for-the-badge&logo=leetcode)\n"
                   f"![](https://img.shields.io/badge/Easy-{easy}-green?style=for-the-badge)\n"
-                  f"![](https://img.shields.io/badge/Medium-{medium}-orange?style=for-the-badge)\n"
-                  f"![](https://img.shields.io/badge/Hard-{hard}-red?style=for-the-badge)")
+                  f"![]([https://img.shields.io/badge/Medium-](https://img.shields.io/badge/Medium-){medium}-orange?style=for-the-badge)\n"
+                  f"![]([https://img.shields.io/badge/Hard-](https://img.shields.io/badge/Hard-){hard}-red?style=for-the-badge)")
         updated = re.sub(r"<!-- START_STATS_VAL -->.*?<!-- END_STATS_VAL -->", f"<!-- START_STATS_VAL -->\n{badges}\n<!-- END_STATS_VAL -->", content, flags=re.DOTALL)
         readme.write_text(updated, encoding="utf-8")
         print("📈 README stats synchronized successfully!")
@@ -88,7 +88,6 @@ def generate_with_deepseek(filename: str):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("💡 Usage: python generate_notes_deepseek.py ContainsDuplicate.kt")
+        print("💡 Usage: python generate_notes.py ContainsDuplicate.kt")
         sys.exit(1)
     generate_with_deepseek(sys.argv[1])
-```
