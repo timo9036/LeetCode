@@ -1,6 +1,6 @@
 # 🚀 LeetCode & NeetCode FAANG Preparation Engine
 
-An automated, data-driven framework designed to master Data Structures & Algorithms (DSA), build deep syntax fluency in Kotlin, and systematically prepare for FAANG-level technical interviews.
+An automated, data-driven framework designed to master Data Structures & Algorithms (DSA), build deep syntax fluency in Kotlin and Python, and systematically prepare for technical interviews.
 
 ---
 
