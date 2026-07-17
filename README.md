@@ -1,4 +1,4 @@
-# 🚀 LeetCode & NeetCode FAANG Preparation Engine
+# 🚀 LeetCode Engine
 
 An automated, data-driven framework designed to master Data Structures & Algorithms (DSA), build deep syntax fluency in Kotlin and Python, and systematically prepare for technical interviews.[cite: 15]
 
@@ -14,8 +14,7 @@ An automated, data-driven framework designed to master Data Structures & Algorit
 <!-- END_STATS_VAL -->
 
 ### 🎯 Objective Strategy
-- **Primary Language:** Kotlin (Optimizing for day-job autonomy & structured type safety in system design)[cite: 15]
-- **Curriculum Track:** NeetCode 150 Mastery Tree[cite: 15]
+- **Primary Language:** Kotlin and Python (Optimizing for day-job autonomy & structured type safety in system design)[cite: 15]
 - **Knowledge Base:** Synced locally with an Obsidian Markdown Vault using YAML frontmatter for deep query mapping.[cite: 15]
 
 ---
@@ -24,7 +23,7 @@ An automated, data-driven framework designed to master Data Structures & Algorit
 
 You have two paths to choose from depending on whether you are using a dedicated API key or a premium subscription IDE workspace agent.
 
-### Path A: The Direct API Framework (DeepSeek Engine)
+### Path A: The Direct API Framework
 Use this option to directly generate deep technical study documentation straight from your terminal terminal workspace.
 
 ```text
@@ -36,7 +35,7 @@ Use this option to directly generate deep technical study documentation straight
 python generate_notes.py ValidAnagram.kt
 ```
 
-### Path B: The Subscription Agent Framework (Cursor / Claude Code)
+### Path B: The Subscription Agent Framework
 Use this option if you prefer using a native chat subscription context window without configuring environment api credentials.
 
 ```text
