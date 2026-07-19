@@ -7,8 +7,8 @@ An automated, data-driven framework designed to master Data Structures & Algorit
 ## 📊 Performance & Progress Tracker
 
 <!-- START_STATS_VAL -->
-![](https://img.shields.io/badge/Total%20Problems%20Solved-1-blueviolet?style=for-the-badge&logo=leetcode)
-![](https://img.shields.io/badge/Easy-1-green?style=for-the-badge)
+![](https://img.shields.io/badge/Total%20Problems%20Solved-2-blueviolet?style=for-the-badge&logo=leetcode)
+![](https://img.shields.io/badge/Easy-2-green?style=for-the-badge)
 ![](https://img.shields.io/badge/Medium-0-orange?style=for-the-badge)
 ![](https://img.shields.io/badge/Hard-0-red?style=for-the-badge)
 <!-- END_STATS_VAL -->

@@ -45,8 +45,15 @@ def build_agent_manifest():
 You are an elite software engineering agent. Your task is to process the following newly added code files and create matching study notes inside the `./notes/` folder.
 
 ## 🎯 Task Instructions:
-1. For each file listed below, create a file named `./notes/<FileName>.md`.
-2. Follow this precise format for each note:
+1. Verify that each solution source file is fully compilable, runnable, and educational:
+   - Consolidate multiple duplicate classes (e.g. `class Solution` defined multiple times in the same file) into a single descriptive class (e.g. `class ValidAnagram`).
+   - Implement the different algorithmic approaches as descriptively named methods within that single class (e.g. `hasDuplicateBruteForce()`, `hasDuplicateSorting()`, `hasDuplicateOptimal()`).
+   - Add a `fun main()` (for Kotlin/Java) or `if __name__ == "__main__":` (for Python) entry point containing test cases with assertions/prints, making the file fully executable.
+   - Add verbose, step-by-step comments explaining every line of the source code.
+   - If the source file lacks these, overwrite the source code file under `./solutions/<FileName>` with the corrected, commented, and runnable version.
+
+2. For each file listed below, create a file named `./notes/<FileName>.md`.
+3. Follow this precise format for each note, explaining concepts clearly for LeetCode beginners:
    ---
    tags: [leetcode, difficulty/easy-or-medium-or-hard, ds/target-ds, pattern/target-pattern]
    difficulty: Easy | Medium | Hard
@@ -67,9 +74,13 @@ You are an elite software engineering agent. Your task is to process the followi
    ## 📋 Problem Description
    [Insert real LeetCode description text here]
 
+   ## 🔍 Detailed Problem Breakdown & Intuition
+   > [!note] Understanding the Goal
+   > [Explain in plain English what the problem is asking. Detail inputs, outputs, and constraints. Walk through the sample examples step-by-step and explain verbosely why the output is what it is, mapping characters or values to illustrate the concept.]
+
    ## 🧠 Conceptual Blueprint
    > [!info] Strategic Design
-   > [Plain English strategic explanation of the brute force vs optimal methods found in the code]
+   > [Provide a highly verbose comparative analysis of all approaches found in the code. Explain the Brute Force approach and why its time complexity is high. Explain intermediate approaches (e.g., Sorting) and how they organize data. Finally, explain the Optimal approach, detailing why it improves speed and what trade-offs (e.g., memory vs time) are involved.]
 
    ## ⚡ The Algorithmic Trick / Insight
    > [!tip] Optimization Breakthrough
@@ -79,10 +90,16 @@ You are an elite software engineering agent. Your task is to process the followi
    > [!warning] Critical Pitfalls
    > [Edge cases to watch out for, e.g., empty inputs, negatives, numeric overflow]
 
-   ## 🛠️ Complete Implementations
-   [Embed code snippets explicitly parsed from the source file]
+   ## 💡 Step-by-Step Educational Deep Dive
+   > [!note] Beginner-Friendly Explanation
+   > - **Data Structures used**: [Explain why we use things like HashSets, HashMaps, or Arrays here, and what they do in simple terms]
+   > - **Time & Space Analysis**: [Break down why the complexities are what they are, e.g. "Sorting takes O(n log n) because..."]
+   > - **Dry Run / Walkthrough**: [Walk through a small sample input, e.g. nums = [1, 2, 3, 1], and show step-by-step how the data structures update]
 
-3. Once all notes are generated, update the custom markdown badge values located between `<!-- START_STATS_VAL -->` and `<!-- END_STATS_VAL -->` sections in the root `./README.md` file to reflect accurate total counts.
+   ## 🛠️ Complete Implementations
+   [Embed code snippets explicitly parsed from the source file, including the main runner method]
+
+4. Once all notes are generated, update the custom markdown badge values located between `<!-- START_STATS_VAL -->` and `<!-- END_STATS_VAL -->` sections in the root `./README.md` file to reflect accurate total counts.
 
 ## 📂 Target Source Files to Process:
 """
