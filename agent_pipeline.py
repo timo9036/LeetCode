@@ -62,6 +62,9 @@ You are an elite software engineering agent. Your task is to process the followi
    space_complexity: "O(...)"
    target_language: Kotlin | Python | Java
    leetcode_url: "https://leetcode.com/problems/problem-name-kebab-case/"
+   status: "Solved"
+   confidence: 5
+   last_reviewed: 2026-07-20
    ---
    
    ![](https://img.shields.io/badge/LeetCode-<ProblemName>-blueviolet?style=for-the-badge&logo=leetcode)

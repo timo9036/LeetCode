@@ -6,6 +6,9 @@ time_complexity: O(n)
 space_complexity: O(n)
 target_language: Kotlin
 leetcode_url: "https://leetcode.com/problems/contains-duplicate/"
+status: "Unsolved"
+confidence: 1
+last_reviewed: 2026-07-20
 ---
 
 ![](https://img.shields.io/badge/LeetCode-217._Contains_Duplicate-blueviolet?style=for-the-badge&logo=leetcode)

@@ -46,6 +46,9 @@ Structure your analysis with these exact sections and formatting:
    space_complexity: "O(...)"
    target_language: Kotlin | Python | Java
    leetcode_url: "https://leetcode.com/problems/problem-name-kebab-case/"
+   status: "Solved"
+   confidence: 5
+   last_reviewed: 2026-07-20
    ---
 
 2. SHIELDS.IO BADGES (immediately following the YAML block, before the title):
@@ -155,7 +158,7 @@ def refactor_solution_file(filename: str, api_key: str) -> str:
     }
 
     try:
-        response = requests.post(DEEPSEEK_API_URL, json=payload, headers=headers)
+        response = requests.post(DEEPSEEK_API_URL, json=payload, headers=headers, timeout=30)
         response.raise_for_status()
         refactored_code = response.json()["choices"][0]["message"]["content"].strip()
         
@@ -203,7 +206,7 @@ def generate_with_deepseek(filename: str):
 
     try:
         # [Synchronous I/O Boundary]: Executes network request to fetch AI analysis.
-        response = requests.post(DEEPSEEK_API_URL, json=payload, headers=headers)
+        response = requests.post(DEEPSEEK_API_URL, json=payload, headers=headers, timeout=30)
         response.raise_for_status()
         markdown_output = response.json()["choices"][0]["message"]["content"]
         

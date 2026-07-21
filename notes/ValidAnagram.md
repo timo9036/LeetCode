@@ -6,6 +6,9 @@ time_complexity: "O(n)"
 space_complexity: "O(1)"
 target_language: Kotlin
 leetcode_url: "https://leetcode.com/problems/valid-anagram/"
+status: "Unsolved"
+confidence: 1
+last_reviewed: 2026-07-20
 ---
 
 ![](https://img.shields.io/badge/LeetCode-242._Valid_Anagram-blueviolet?style=for-the-badge&logo=leetcode)

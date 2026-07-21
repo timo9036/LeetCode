@@ -11,14 +11,12 @@
             "id": "35140ea3ae3e120f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "code-editor",
               "state": {
-                "file": "notes/ValidAnagram.md",
-                "mode": "source",
-                "source": false
+                "file": "solutions/ContainsDuplicate.kt"
               },
               "icon": "lucide-file",
-              "title": "ValidAnagram"
+              "title": "ContainsDuplicate.kt"
             }
           }
         ]
@@ -188,16 +186,16 @@
   "lastOpenFiles": [
     "notes/ContainsDuplicate.md",
     "notes/ValidAnagram.md",
-    "generate_notes.py",
-    "agent_pipeline.py",
     "solutions/ContainsDuplicate.kt",
     "solutions/ValidAnagram.kt",
+    "agent_pipeline.py",
+    "generate_notes.py",
+    "LeetCode Dashboard.md",
+    "README.md",
     "solutions/Valid Anagram.kt",
     "__pycache__/generate_notes.cpython-314.pyc",
     "__pycache__",
     "agent_todo.manifest",
-    "README.md",
-    "LeetCode Dashboard.md",
     "New Text Document.txt"
   ]
 }
